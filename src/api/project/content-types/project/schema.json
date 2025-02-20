@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "Projets",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "direct_link": {
+      "type": "string"
+    },
+    "github_link": {
+      "type": "string"
+    },
+    "project_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project-category.project-category",
+      "mappedBy": "projects"
+    }
+  }
+}

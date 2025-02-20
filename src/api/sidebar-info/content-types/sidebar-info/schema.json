@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "sidebar_infos",
+  "info": {
+    "singularName": "sidebar-info",
+    "pluralName": "sidebar-infos",
+    "displayName": "Sidebar Info",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "required": true
+    },
+    "birthday": {
+      "type": "date",
+      "required": true,
+      "default": "2001-09-09"
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "github": {
+      "type": "string",
+      "required": true
+    },
+    "linkedin": {
+      "type": "string",
+      "required": true
+    },
+    "job": {
+      "type": "string",
+      "required": true
+    },
+    "activeTabImages": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}
