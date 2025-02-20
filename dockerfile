@@ -14,4 +14,4 @@ EXPOSE 1337
 #Commande pour lancer le serveur
 #CMD ["npm", "install" ,"&&","npm", "start"]
 
-CMD npm install strapi@latest && npm install && npm run dev
+CMD npm install strapi@latest && npm install && yarn develop
